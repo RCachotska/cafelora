@@ -10,10 +10,10 @@ export const Header = () => {
         <div className="navigation">
           <button className="nav-btn"></button>
           <nav className="rollout-nav nav-closed">
-            <a href="#home">domů</a>
-            <a href="#menu">menu</a>
-            <a href="#gallery">galerie</a>
-            <a href="#contact">kontakt</a>
+            <a href="#home">Domů</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Galerie</a>
+            <a href="#contact">Kontakt</a>
           </nav>
         </div>
 

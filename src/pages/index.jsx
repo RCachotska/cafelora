@@ -12,7 +12,7 @@ import { Footer } from '../components/Footer/Footer';
 console.log ( "Ahoj 113")
 
 document.querySelector('#root').innerHTML = render(
-  <div className="page">
+  <div class="page">
   
     <Header />
 
@@ -29,3 +29,23 @@ document.querySelector('#root').innerHTML = render(
     
   </div>
 );
+
+
+
+
+const navBtn = document.querySelector('.nav-btn');
+const rolloutNav = document.querySelector('.rollout-nav');
+
+if (navBtn && rolloutNav) {
+
+  navBtn.addEventListener('click', () => {
+    rolloutNav.classList.toggle('nav-closed');
+  });
+
+  rolloutNav.addEventListener('click', () => {
+  rolloutNav.classList.add('nav-closed');
+  });
+
+} else {
+  console.warn("Chybí elementy .nav-btn nebo .rollout-nav. Zkontrolujte, zda jsou v HTML.");
+}
