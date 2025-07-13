@@ -1,6 +1,121 @@
+import { Drink } from "../Drink/Drink";
 
 export const Menu = () => {
+  return (
+    <section id="menu" className="menu">
+      <div className="container">
+        <h2>Naše nabídka</h2>
+        <p className="menu-intro">
+          Vyberte si z našeho interaktivního menu a nemusíte čekat na obsluhu
+        </p>
+        <div className="drinks-list">
+          {/* Zde vložíme naši komponentu Drink s vlastními daty */}
+          <Drink
+            id={10}
+            name="Latte Macchiato"
+            ordered={false}
+            image="/cups/latte.png"
+            layers={[
+              {
+                color: '#FED766',
+                label: 'mléčná pěna',
+              },
+              {
+                color: '#FFF2C6',
+                label: 'mléko',
+              },
+              {
+                color: '#613916',
+                label: 'espresso',
+              },
+            ]}
+          />
+
+          {/* Smazané původní ukázkové nápoje (Espresso, Doppio, Lungo, Romano) */}
+        </div>
+
+        <div className="order-detail">
+          <a href="/order.html">Detail objednávky</a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+
+     {/*     
+     
+        <Drink
+            id={0}
+            name="Espresso"
+            ordered={false}
+            image="/cups/espresso.png"
+            layers={[
+              {
+                color: '#613916',
+                label: 'espresso',
+              },
+            ]}
+          />
+          <Drink
+            id={1}
+            name="Doppio"
+            ordered={false}
+            image="/cups/doppio.png"
+            layers={[
+              {
+                color: '#613916',
+                label: 'espresso',
+              },
+              {
+                color: '#613916',
+                label: 'espresso',
+              },
+            ]}
+          />
+          <Drink
+            id={2}
+            name="Lungo"
+            ordered={false}
+            image="/cups/lungo.png"
+            layers={[
+              {
+                color: '#b0dee1',
+                label: 'voda',
+              },
+              {
+                color: '#613916',
+                label: 'espresso',
+              },
+            ]}
+          />
+         
+          <Drink
+            id={3}
+            name="Romano"
+            ordered={false}
+            image="http://localhost:4000/assets/cups/romano.png"
+            layers={[
+              {
+                color: '#fbdf5b',
+                label: 'citrón',
+              },
+              {
+                color: '#613916',
+                label: 'espresso',
+              },
+            ]}
+          />
+        </div>
+*/}
+
+      
+
+
+{/*
+export const Menu = () => {
     return (
+
 
         <section id="menu" className="menu">
         <div className="container">
@@ -9,6 +124,7 @@ export const Menu = () => {
             Vyberte si z našeho interaktivního menu a nemusíte čekat na obsluhu
           </p>
           <div className="drinks-list">
+
             <div className="drink">
               <div className="drink__product">
                 <div className="drink__cup">
@@ -85,4 +201,4 @@ export const Menu = () => {
 
     );
 };
-
+*/}
