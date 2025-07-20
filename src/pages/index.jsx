@@ -9,7 +9,8 @@ import { Gallery } from '../components/Gallery/Gallery';
 import { Contact } from '../components/Contact/Contact';
 import { Footer } from '../components/Footer/Footer';
 
-console.log ( "Ahoj 113")
+
+console.log ( "Ahoj 110")
 
 document.querySelector('#root').innerHTML = render(
   <div class="page">
@@ -22,6 +23,7 @@ document.querySelector('#root').innerHTML = render(
       <Menu />
       <Gallery />
       <Contact />
+    
 
     </main>
  
@@ -29,8 +31,6 @@ document.querySelector('#root').innerHTML = render(
     
   </div>
 );
-
-
 
 
 const navBtn = document.querySelector('.nav-btn');
@@ -49,3 +49,21 @@ if (navBtn && rolloutNav) {
 } else {
   console.warn("Chybí elementy .nav-btn nebo .rollout-nav. Zkontrolujte, zda jsou v HTML.");
 }
+
+/*
+const response = await fetch ( 'http://localhost:4000/api/drinks');
+const receivedData = await response.json();
+console.log("Přijatá data:", receivedData);
+*/
+
+// formát vrácených dat JE TO POLE!!!  array
+
+
+//const adrobr  = receivedData.data[1].image;
+//const jmenokavy = receivedData.data[1].name;
+
+
+
+//document.body.innerHTML += `<p>Jméno kávy = ${jmenokavy}</p>`;
+//document.body.innerHTML += `<p>Cesta obrazku = ${adrobr}</p>`;
+

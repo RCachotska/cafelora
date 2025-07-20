@@ -1,0 +1,44 @@
+
+* header.css */
+header {
+  padding: 1rem 0 1rem 0;
+  height: 5rem;
+  background-color: #301a1a;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-logo {
+  width: 180px;
+  height: 50px;
+  background-image: url("./img/site-logo.png");
+  background-size: contain;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+nav a {
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+nav a:hover {
+  border-bottom: 1px solid white;
+}
+
+/* ... a všechny ostatní styly související s hlavičkou, včetně media queries */
+@media (min-width: 768px) {
+  .navigation {
+    flex-direction: row;
+  }
+  /* ... atd. */
+}

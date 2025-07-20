@@ -1,4 +1,4 @@
-import { Layer } from "../Layer";
+import { Layer } from "../Layer/Layer";
 
 
 export const Drink = ({ name, image, layers }) => { 
@@ -26,6 +26,12 @@ export const Drink = ({ name, image, layers }) => {
         <button className="order-btn">
           Objednat
         </button>
+
+        <button className="order-btn--ordered">
+          Objednáno
+        </button>
+
+
       </form>
     </div>
   );
